@@ -6,67 +6,121 @@ body{
     display: flex;
     flex-direction:column;
 	align-items: center;
+    margin: 20px;
+    gap: 20px;
 }
-.first-container{
+/* first content */
+.first-container, .third-container{
+    /* position: absolute; */
+    width: 100%;
+    /* right: 0 ; */
+    display:flex;
+    justify-content: flex-end;
+    gap: 6px;
+}
+.first-container.extra{
+    right: 0;
+}
+
+/* second content */
+.second-container{
+    height:fit-content;
+    display: flex ;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 80px;
+
+}
+
+.second-container img{
     position: absolute;
-    right: 0 ;
+    width: 120px;
+    top: 5px;
 }
-.first-container.img{
-    margin: 0 auto;
+.second-container h1{
+    /* width: 120px; */
+    /* margin-top : 100px; */
+    height: fit-content;
+    margin: 10px;
+    margin-bottom: 210px;
+
+
 }
+.sub-container{
+    margin-top: 30px;
+    position: absolute;
+    height: fit-content;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 5px;
+}
+.sub-container h1{
+    font-family: Arial;
+    margin-bottom: 0;
+}
+.data{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180px;
+    font-weight: 150;
+    margin: 0;
+    padding: 0;
+    /* height: 120px; */
+    
+}
+.extra-data{
+    
+    padding-top: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.extra-data .donvi{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 0 ;
+    margin: 0;
+    /* font-weight: 100; */
+}
+
+.icon {
+    font-size: 35px;
+    cursor: pointer;
+}
+.extra-data .icon {
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 20px;
+    border: 2px solid green;
+}
+
+.more-info{
+    padding: 6px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.button-container{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+/* third content */
 .third-container{
     position: absolute;
-    right: 0 ;
+    right: 20px ;
     bottom: 10px;
-    display:flex;
     flex-direction:row;
     align-items: center;
     gap: 6px;
 }
-.third-container.text{
+.third-container p{
     font-size: 10px;
 }
-.container {
-    /* background-color: red; */
-    display: flex;
-    flex-direction:column;
-	align-items: center;
-    .first-container{
-        .select{
 
-        }
-        .extra{
-            
-        }
-    }
-    .second-container{
-        h1{
-
-        }
-        img{
-            
-        }
-        .sub-container{
-            .data{
-
-            }
-            .extra-data{
-                .donvi{
-
-                }
-                .refresh{
-
-                }
-            }
-        }
-    }
-    .third-container{
-        .text{
-
-        }
-        .logo{
-
-        }
-
-    }
-}
